@@ -1,0 +1,51 @@
+@import "./mixins";
+body {
+    background-color: aliceblue;
+}
+#main{
+    display: flex;
+    justify-content: space-evenly;
+    @include mobile{
+        display: contents;
+    }
+    .main{
+        h5{
+            color: dimgray;
+        }
+        margin-top: 50px;
+        margin-left: 100px;
+        @include mobile{
+            margin-left: 20px;
+        }
+        &-text{
+          margin-left: 50px;
+        }
+        &-part{
+            margin-left: 166px;
+        }
+        &-logo{
+        margin-left: 123px;
+    }
+        &-tittle{
+            margin-left: 138px;
+            h4{
+                color: blue;
+            }
+        }
+    }
+    .picture{
+        display: flex;
+        margin-right: 100px;
+        &-base{
+            margin-top: 20px;
+        margin-right: 20px;
+            &-icon{
+             width: 142.769px;
+             height: 142.769px;
+             flex-shrink: 0;
+           margin-top: 20px;
+            }
+        }
+    }
+
+}
